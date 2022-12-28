@@ -1,0 +1,33 @@
+#all {
+    background-color: transparent;
+    @include Img($wid:$wid_100,$heit:105px,$pos:absolute,$z:99999);
+    @include Flex($j_content:space-between,$a_items:center);
+}
+    .container {
+        max-width: 1200px;
+        .all_line {
+            @include Flex($j_content: space-between, $a_items: center);
+            a { img { @include Img($wid: 195px, $heit: 55px); } }
+            .menu {
+                ul {
+                    @include Flex($gap: 50px);
+                    li {
+                        a {
+                            @include Text($colors: $white_color, $f_size: 16px, $f_weight: $font_700_w, $l_height:24px, $t_decoration: none);
+                            font-family: "Chakra Petch", sans-serif;
+                            padding-right: 21px;
+                            &:hover{ color: $pink_color; }
+                        }
+                    }
+                }
+            }
+            .a_navbar{
+                @include Img($wid:160px,$heit:50px);
+                @include Text($ground:$line_color,$colors:$white_color,$f_weight:$font_700_w,$radius:30px,$t_decoration:none);
+                font-family: "Chakra Petch", sans-serif;
+                transition: all 0.3s ease;
+                &:hover{ background: linear-gradient(124deg,#f95420,#f70361,#f95a85); }
+            }
+        }
+    }
+    

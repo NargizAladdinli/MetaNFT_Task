@@ -1,0 +1,21 @@
+@mixin Img($wid:null,$heit:null,$pos:null,$z:null){
+    width: $wid;
+    height: $heit;
+    position: $pos;
+    z-index: $z;
+}
+@mixin Flex($j_content:null,$a_items:null,$gap:null){
+    display: flex;
+    justify-content: $j_content;
+    align-items: $a_items;
+    gap:$gap
+}
+@mixin Text($colors:null,$f_size:null,$f_weight:null,$l_height:null,$t_decoration:null,$ground:null,$radius:null){
+    color: $colors;
+    font-size: $f_size;
+    font-weight: $f_weight;
+    line-height: $l_height;
+    text-decoration: $t_decoration;
+    background: $ground;
+    border-radius: $radius;
+}
