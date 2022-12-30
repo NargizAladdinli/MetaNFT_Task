@@ -1,16 +1,18 @@
-@mixin Img($wid:null,$heit:null,$pos:null,$z:null){
+@mixin Img($wid:null,$heit:null,$pos:null,$z:null,$flow:null){
     width: $wid;
     height: $heit;
     position: $pos;
     z-index: $z;
+    overflow: $flow;
 }
-@mixin Flex($j_content:null,$a_items:null,$gap:null){
+@mixin Flex($j_content:null,$a_items:null,$gap:null,$f_direction:null){
     display: flex;
     justify-content: $j_content;
     align-items: $a_items;
-    gap:$gap
+    gap:$gap;
+    flex-direction:$f_direction;
 }
-@mixin Text($colors:null,$f_size:null,$f_weight:null,$l_height:null,$t_decoration:null,$ground:null,$radius:null){
+@mixin Text($colors:null,$f_size:null,$f_weight:null,$l_height:null,$t_decoration:null,$ground:null,$radius:null,$border:null,$l_spacing:null){
     color: $colors;
     font-size: $f_size;
     font-weight: $f_weight;
@@ -18,4 +20,6 @@
     text-decoration: $t_decoration;
     background: $ground;
     border-radius: $radius;
+    border: $border;
+    letter-spacing: $l_spacing;
 }

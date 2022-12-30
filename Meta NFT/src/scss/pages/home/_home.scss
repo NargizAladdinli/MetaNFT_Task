@@ -1,9 +1,144 @@
-#swipe{
-    .qlobal{
-        width: $wid_100;
-        height: 750px;
+#swipe {
+    .qlobal {
+        @include Img($wid: $wid_100, $heit: 750px);
         background-size: cover;
         background-position: center top;
         background-repeat: no-repeat;
+        @include Flex($j_content: center, $a_items: center);
+        .container {
+            max-width: 1140px;
+            text-align: center;
+            .txt {
+                h1 {
+                    margin-bottom: 25px;
+                    @include Text($colors: $white_color, $f_size: 65px, $f_weight: $font_700_w, $l_height: 1.2);
+                }
+                p {
+                    margin-bottom: 30px;
+                    @include Text($colors: #e0dede, $l_height: 1.6, $l_spacing: .3px);
+                }
+            }
+            .btn {
+                @media (max-width:768px) { @include Flex($f_direction:column,$a_items:center,$gap:20px); }
+                .pink {
+                    font-family: 'Montserrat', sans-serif;
+                    padding: 14px 40px;
+                    @include Text($t_decoration:none,$ground:$line_color,$colors:$white_color,$f_size:16px,$f_weight:$font_700_w,$radius:30px);
+                    transition: all 0.3s ease;
+                    &:hover{ background: linear-gradient(124deg, #f95420, #f70361, #f95a85); }
+                }
+                .white{
+                    font-family: 'Montserrat', sans-serif;
+                    padding: 14px 40px;
+                    @include Text($t_decoration:none,$ground:none,$colors:$white_color,$f_size:16px,$f_weight:$font_700_w,$radius:30px,$border:1px solid #747273);
+                    transition: all 0.3s ease;
+                    &:hover{ 
+                        background: $white_color;
+                        color: #f70361;
+                     }
+                }
+            }
+        }
+    }
 }
+#picture{
+    padding: 100px 0px;
+    .container{
+        max-width: 1140px;
+        .text{
+            @include Flex($j_content:space-between,$a_items:center);
+            h3{
+                font-family: 'Montserrat', sans-serif;
+                @include Text($colors:$white_color,$f_size:28px,$f_weight:$font_700_w,$l_spacing:.6px);
+            }
+            a{
+                @include Flex($a_items:center,$gap:10px);
+                @include Text($f_size:15px,$f_weight:600,$colors:$white_color,$t_decoration:none);
+                transition: .3s ease-in-out;
+                &:hover{ color: $pink_color; }
+                i{
+                    @include Img($wid:20px,$heit:20px,$flow:hidden);
+                    @include Text($ground:$pink_color,$colors:$white_color);
+                    @include Flex($j_content:center,$a_items:center);
+                }
+            }
+        }
+        .boxing{
+            @include Text($ground:$rgba_255_003,$colors:$white_color,$border:2px solid $rgba_255_01,$radius:24px);
+            padding: 20px;
+            overflow: hidden;
+            @include Img($wid:$wid_100,$heit:422px);
+            .peple{
+                @include Flex($j_content:space-between,$a_items:center);
+                a{
+                    img{
+                        @include Img($wid:50px,$heit:50px);
+                        border-radius: 50px;
+                    }
+                }
+                a{
+                    text-decoration: none;
+                    h4{
+                        font-family: 'Michroma', sans-serif;
+                        @include Text($colors:$white_color,$f_size:14px,$f_weight:$font_700_w,$l_height:1.2);
+                    }
+                }
+                .heart{
+                    font-family: 'Montserrat', sans-serif;
+                    display: inline-block;
+                    padding: 5px 8px;
+                    @include Text($ground:$rgba_255_04,$colors:$white_color,$radius:4px,$f_size:13px,$f_weight:600,$l_height:1,$l_spacing:1px);
+                    a{
+                        color: $white_color;
+                        i{ 
+                            color: #e4484c;
+                            padding: 0px 5px;
+                        }
+                    }
+                }
+                }
+                .img{
+                    img{
+                        border-radius: 24px;
+                        @include Img($wid:149px,$heit:149px);
+                    }
+                }
+            }
+        }
+    }
+#anime{
+    padding: 50px 0px;
+    .container{
+        max-width: 1140px;
+        .text{
+            @include Flex($j_content:space-between,$a_items:center);
+            h3{
+                font-family: 'Montserrat', sans-serif;
+                @include Text($colors:$white_color,$f_size:28px,$f_weight:$font_700_w,$l_spacing:.6px);
+            }
+            a{
+                @include Flex($a_items:center,$gap:10px);
+                @include Text($f_size:15px,$f_weight:600,$colors:$white_color,$t_decoration:none);
+                transition: .3s ease-in-out;
+                &:hover{ color: $pink_color; }
+                i{
+                    @include Img($wid:20px,$heit:20px,$flow:hidden);
+                    @include Text($ground:$pink_color,$colors:$white_color);
+                    @include Flex($j_content:center,$a_items:center);
+                }
+            }
+        }
+        .boxing{
+            @include Text($ground:$rgba_255_003,$colors:$white_color,$border:2px solid $rgba_255_01,$radius:24px);
+            padding: 20px;
+            transition: all 0.3s ease-in-out;
+            overflow: hidden;
+            transform: translateY(10px);
+            @include Img($wid:$wid_100,$heit:422px);
+            &:hover{
+                transform: translate(0);
+                border: 2px solid $pink_color;
+            }
+        }
+    }
 }

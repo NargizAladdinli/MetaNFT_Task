@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -34,21 +36,26 @@ body {
   width: 195px;
   height: 55px;
 }
+@media (max-width: 768px) {
+  .container .all_line .menu {
+    display: none;
+  }
+}
 .container .all_line .menu ul {
   display: flex;
-  gap: 50px;
+  align-items: center;
+  gap: 20px;
 }
-.container .all_line .menu ul li a {
+.container .all_line .menu ul li .btn {
   color: #fff;
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
   text-decoration: none;
   font-family: "Chakra Petch", sans-serif;
-  padding-right: 21px;
 }
-.container .all_line .menu ul li a:hover {
-  color: #f70361;
+.container .all_line .menu ul li .btn:hover {
+  color: #f70361 !important;
 }
 .container .all_line .a_navbar {
   width: 160px;
@@ -58,11 +65,60 @@ body {
   text-decoration: none;
   background: linear-gradient(124deg, #f95a85, #f70361, #f95420);
   border-radius: 30px;
+  border: 1px;
   font-family: "Chakra Petch", sans-serif;
   transition: all 0.3s ease;
 }
+@media (max-width: 768px) {
+  .container .all_line .a_navbar {
+    display: none;
+  }
+}
 .container .all_line .a_navbar:hover {
   background: linear-gradient(124deg, #f95420, #f70361, #f95a85);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown:hover .dropdown-content {
+  visibility: visible;
+  transform: translateY(0);
+}
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-decoration: none;
+  border: none;
+  font-family: "Chakra Petch", sans-serif;
+}
+.dropdown i {
+  color: #fff;
+}
+.dropdown .dropdown-content {
+  transform: translateY(20px);
+  visibility: hidden;
+  transition: 0.3s ease-in-out;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  z-index: 1;
+}
+.dropdown .dropdown-content .drp {
+  padding: 12px 16px;
+  display: block;
+  color: #0b1124;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-decoration: none;
+}
+.dropdown .dropdown-content .drp:hover {
+  color: #f70361 !important;
 }
 
 #swipe .qlobal {
@@ -71,4 +127,216 @@ body {
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#swipe .qlobal .container {
+  max-width: 1140px;
+  text-align: center;
+}
+#swipe .qlobal .container .txt h1 {
+  margin-bottom: 25px;
+  color: #fff;
+  font-size: 65px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+#swipe .qlobal .container .txt p {
+  margin-bottom: 30px;
+  color: #e0dede;
+  line-height: 1.6;
+  letter-spacing: 0.3px;
+}
+@media (max-width: 768px) {
+  #swipe .qlobal .container .btn {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+  }
+}
+#swipe .qlobal .container .btn .pink {
+  font-family: "Montserrat", sans-serif;
+  padding: 14px 40px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  background: linear-gradient(124deg, #f95a85, #f70361, #f95420);
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+#swipe .qlobal .container .btn .pink:hover {
+  background: linear-gradient(124deg, #f95420, #f70361, #f95a85);
+}
+#swipe .qlobal .container .btn .white {
+  font-family: "Montserrat", sans-serif;
+  padding: 14px 40px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  background: none;
+  border-radius: 30px;
+  border: 1px solid #747273;
+  transition: all 0.3s ease;
+}
+#swipe .qlobal .container .btn .white:hover {
+  background: #fff;
+  color: #f70361;
+}
+
+#picture {
+  padding: 100px 0px;
+}
+#picture .container {
+  max-width: 1140px;
+}
+#picture .container .text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#picture .container .text h3 {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+}
+#picture .container .text a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+#picture .container .text a:hover {
+  color: #f70361;
+}
+#picture .container .text a i {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: #fff;
+  background: #f70361;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#picture .container .boxing {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 24px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  overflow: hidden;
+  width: 100%;
+  height: 422px;
+}
+#picture .container .boxing .peple {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#picture .container .boxing .peple a img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+#picture .container .boxing .peple a {
+  text-decoration: none;
+}
+#picture .container .boxing .peple a h4 {
+  font-family: "Michroma", sans-serif;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+#picture .container .boxing .peple .heart {
+  font-family: "Montserrat", sans-serif;
+  display: inline-block;
+  padding: 5px 8px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 4px;
+  letter-spacing: 1px;
+}
+#picture .container .boxing .peple .heart a {
+  color: #fff;
+}
+#picture .container .boxing .peple .heart a i {
+  color: #e4484c;
+  padding: 0px 5px;
+}
+#picture .container .boxing .img img {
+  border-radius: 24px;
+  width: 149px;
+  height: 149px;
+}
+
+#anime {
+  padding: 50px 0px;
+}
+#anime .container {
+  max-width: 1140px;
+}
+#anime .container .text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#anime .container .text h3 {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+}
+#anime .container .text a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+#anime .container .text a:hover {
+  color: #f70361;
+}
+#anime .container .text a i {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: #fff;
+  background: #f70361;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#anime .container .boxing {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 24px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  transform: translateY(10px);
+  width: 100%;
+  height: 422px;
+}
+#anime .container .boxing:hover {
+  transform: translate(0);
+  border: 2px solid #f70361;
 }/*# sourceMappingURL=style.css.map */
