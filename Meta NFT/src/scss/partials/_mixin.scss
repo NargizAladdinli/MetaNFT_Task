@@ -1,9 +1,14 @@
-@mixin Img($wid:null,$heit:null,$pos:null,$z:null,$flow:null){
+@mixin Img($wid:null,$heit:null,$pos:null,$z:null,$flow:null,$o_fit:null,$o_pos:null,$right:null,$top:null,$left:null){
     width: $wid;
     height: $heit;
     position: $pos;
     z-index: $z;
     overflow: $flow;
+    object-fit: $o_fit;
+    object-position: $o_pos;
+    right: $right;
+    top: $top;
+    left: $left;
 }
 @mixin Flex($j_content:null,$a_items:null,$gap:null,$f_direction:null){
     display: flex;
@@ -12,7 +17,7 @@
     gap:$gap;
     flex-direction:$f_direction;
 }
-@mixin Text($colors:null,$f_size:null,$f_weight:null,$l_height:null,$t_decoration:null,$ground:null,$radius:null,$border:null,$l_spacing:null){
+@mixin Text($colors:null,$f_size:null,$f_weight:null,$l_height:null,$t_decoration:null,$ground:null,$radius:null,$border:null,$l_spacing:null,$t_align:null){
     color: $colors;
     font-size: $f_size;
     font-weight: $f_weight;
@@ -22,4 +27,5 @@
     border-radius: $radius;
     border: $border;
     letter-spacing: $l_spacing;
+    text-align: $t_align;
 }

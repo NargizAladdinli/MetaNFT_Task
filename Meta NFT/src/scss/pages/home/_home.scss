@@ -129,15 +129,48 @@
             }
         }
         .boxing{
+            margin: 0 auto;
             @include Text($ground:$rgba_255_003,$colors:$white_color,$border:2px solid $rgba_255_01,$radius:24px);
             padding: 20px;
             transition: all 0.3s ease-in-out;
-            overflow: hidden;
             transform: translateY(10px);
-            @include Img($wid:$wid_100,$heit:422px);
+            @include Img($wid:350px,$heit:475px,$flow:hidden);
             &:hover{
-                transform: translate(0);
+                transform: translateY(0);
                 border: 2px solid $pink_color;
+            }
+            .all{
+                &:hover{ .abid{ transform: translateY(0); } }
+                .img{
+                    @include Img($wid:300px,$heit:300px,$pos:relative,$flow:hidden);
+                    img{
+                        border-radius: 30px;
+                        @include Img($wid:$wid_100,$heit:100%,$o_fit:cover,$o_pos:center);
+                    }
+                }
+                .heart{
+                    a{
+                        @include Img($pos:absolute,$right:10px,$top:7px,$wid:35px,$heit:35px);
+                        @include Text($l_height:35px,$ground:$rgb_33_44,$t_align:center,$radius:10px);
+                        backdrop-filter: blur(15px);
+                        i{
+                            transition: .3s ease-in-out;
+                            color: #eee;
+                            &:hover{ color: $pink_color; }
+                        }
+                    }
+                }
+                .abid{
+                    @include Img($wid:145px,$pos:absolute,$top:50%,$left:30%,$heit:50px);
+                    @include Flex($j_content:center,$a_items:center);
+                    @include Text($ground:$white_color,$radius:50px,$t_decoration:none,$colors:#343434);
+                    transform: translateY(300px);
+                    transition: 0.3s ease-in-out;
+                    &:hover{
+                        color: $white_color;
+                        background: $line_color;
+                    }
+                }
             }
         }
     }
