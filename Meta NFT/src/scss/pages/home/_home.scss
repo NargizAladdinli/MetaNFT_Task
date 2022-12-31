@@ -273,3 +273,16 @@
         }
     }
 }
+#accord{
+    padding: 50px 0px;
+    .container{
+        max-width: 1140px;
+        h3{
+            font-family: 'Montserrat', sans-serif;
+            @include Text($colors:$white_color,$f_size:28px,$f_weight:$font_700_w,$l_spacing:.6px);
+        }
+        .accordion{
+            @include Flex($f_direction:column,$gap:30px);
+        }
+    }
+}

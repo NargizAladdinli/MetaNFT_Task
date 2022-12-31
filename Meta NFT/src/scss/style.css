@@ -559,4 +559,23 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#accord {
+  padding: 50px 0px;
+}
+#accord .container {
+  max-width: 1140px;
+}
+#accord .container h3 {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+}
+#accord .container .accordion {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
 }/*# sourceMappingURL=style.css.map */
