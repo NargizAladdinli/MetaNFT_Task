@@ -224,6 +224,7 @@ body {
   overflow: hidden;
   color: #fff;
   background: #f70361;
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -320,6 +321,7 @@ body {
   overflow: hidden;
   color: #fff;
   background: #f70361;
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -398,4 +400,163 @@ body {
 #anime .container .boxing .all .abid:hover {
   color: #fff;
   background: linear-gradient(124deg, #f95a85, #f70361, #f95420);
+}
+#anime .container .boxing .all .nft_box .nft_titlewrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+#anime .container .boxing .all .nft_box .nft_titlewrap h3 {
+  font-family: "Michroma", sans-serif;
+  font-size: 20px;
+}
+#anime .container .boxing .all .nft_box .nft_titlewrap h3 a {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+#anime .container .boxing .all .nft_box .nft_titlewrap h3 a:hover {
+  color: #f70361;
+}
+#anime .container .boxing .all .nft_box .nft_titlewrap i {
+  background: #f70361;
+  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#anime .container .boxing .all .nft_box .nft_wordlife {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+}
+#anime .container .boxing .all .nft_box .nft_wordlife .nft_img {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#anime .container .boxing .all .nft_box .nft_wordlife .nft_img img {
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+}
+#anime .container .boxing .all .nft_box .nft_wordlife .nft_img .nft_name {
+  font-family: "Michroma", sans-serif;
+}
+#anime .container .boxing .all .nft_box .nft_wordlife .nft_img .nft_name span {
+  color: #eee;
+  font-size: 13px;
+  line-height: 21px;
+}
+#anime .container .boxing .all .nft_box .nft_wordlife .nft_img .nft_name h4 {
+  color: #fff;
+  font-size: 14px;
+  line-height: 22px;
+}
+#anime .container .boxing .all .nft_box .nft_wordlife .nft_price {
+  font-family: "Michroma", sans-serif;
+}
+#anime .container .boxing .all .nft_box .nft_wordlife .nft_price span {
+  color: #eee;
+  font-size: 10px;
+  line-height: 21px;
+}
+#anime .container .boxing .all .nft_box .nft_wordlife .nft_price h4 {
+  color: #fff;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+#artist {
+  padding: 50px 0px;
+}
+#artist .container {
+  max-width: 1140px;
+}
+#artist .container .text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#artist .container .text h3 {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+}
+#artist .container .text a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+#artist .container .text a:hover {
+  color: #f70361;
+}
+#artist .container .text a i {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: #fff;
+  background: #f70361;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#artist .container .boxing {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 24px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  padding: 10px 10px;
+  overflow: hidden;
+  width: 100%;
+  height: 104px;
+  display: flex;
+  align-items: center;
+}
+#artist .container .boxing a img {
+  margin-right: 15px;
+  width: 80px;
+  height: 80px;
+  border-radius: 24px;
+  border: 3px solid #252743;
+}
+#artist .container .boxing .txt a {
+  font-family: "Michroma", sans-serif;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.4px;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+#artist .container .boxing .txt p {
+  font-family: "Michroma", sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+#artist .container .boxing .txt p i {
+  background: #f70361;
+  border-radius: 50px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
