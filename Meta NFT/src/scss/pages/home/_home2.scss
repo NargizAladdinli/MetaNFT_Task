@@ -1,0 +1,64 @@
+#art {
+    padding: 150px 0px;
+    background-size: cover;
+    min-height: 850px;
+    @media (max-width:768px) {
+        width: 100%;
+    }
+    .container {
+        max-width: 1140px;
+        h1 {
+            &::before{
+                content: "";
+                @include Img($wid:200px,$heit:200px,$pos:absolute,$top:-63px,$left:-35px,$z:-1);
+                @include Text($ground:$befor_radius,$radius:100%);
+                filter: blur(40px);
+                display: inline-block;
+                opacity: 0.5;
+            }
+            position: relative;
+            font-family: 'Michroma', sans-serif;
+            @include Text($colors:$white_color,$f_size:45px,$f_weight:$font_700_w,$l_height:1.2);
+            span{ color: $pink_color; }
+        }
+        p{
+            @include Text($colors:#f1eded,$l_height:1.6,$l_spacing:.3px);
+            padding: 30px 0px;
+        }
+        .but{
+            .pink{
+                @include Text($colors:$white_color,$ground:$line_color,$radius:24px,$f_weight:$font_700_w,$f_size:18px);
+                @include Img($wid:190px,$heit:55px);
+                transition: .3s ease-in-out;
+                &:hover{ background: linear-gradient(124deg, #f95420, #f70361, #f95a85); }
+                i{ padding: 0px 10px; }
+            }
+            .none{
+                padding: 0px 50px;
+                @include Text($ground:none,$border:none,$colors:gray,$f_size:15px,$f_weight:$font_700_w);
+                transition: .3s ease-in-out;
+                &:hover{ color: $white_color; }
+                i{ padding: 0px 10px; }
+            }
+        }
+        .row{
+            padding: 50px 0px;
+            .number{
+                @include Text($f_size:20px,$f_weight:600,$colors:$pink_color);
+                font-family: 'Montserrat', sans-serif;
+                margin-bottom: 10px;
+                display: block;
+            }
+            .rit{
+                @include Text($f_size:15px,$f_weight:600,$colors:#babcc1);
+                font-family: 'Montserrat', sans-serif;
+            }
+            .img{
+                width: 100%;
+                img{
+                    @include Img($wid:100%,$o_fit:contain,$heit:575px);
+                }
+            }
+        }
+    }
+}

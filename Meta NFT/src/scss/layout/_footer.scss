@@ -1,0 +1,56 @@
+#end{
+    background: #040722;
+    margin-top: 120px;
+    border-top: 1px solid #0b0e28;
+    width: 100%;
+    background-size: cover;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #0b0e28;
+    height: 100%;
+   .container{
+    max-width: 1140px;
+    .logo{
+        width: 100%;
+        a{ img{ width: 200px; } }
+    }
+    p{
+        color: $white_color;
+        padding: 50px 0px;
+    }
+    h3{
+        font-family: 'Michroma', sans-serif;
+        @include Text($colors:$white_color);
+        padding: 0px 30px;
+    }
+    ul{
+        li{
+            padding: 10px 0px;
+            a{
+                font-family: 'Michroma', sans-serif;
+                @include Text($t_decoration:none,$colors:#ebe9e9,$f_size:16px,$f_weight:600);
+                padding: 0px 0px;
+                transition: .3s ease-in-out;
+                &:hover{
+                    padding: 0px 5px;
+                    color: $pink_color;
+                }
+            }
+        }
+    }
+    .inpt{
+        @include Img($pos:relative,$flow:hidden);
+        input{
+            @include Img($wid:$wid_100,$heit:50px);
+            @include Text($colors:$white_color,$f_size:16px,$f_weight:600,$radius:24px,$ground:none,$border:1px solid #1f2130);
+            padding: 5px 10px;
+        }
+        a{
+            @include Img($pos:absolute,$top:0,$right:0,$wid:50px,$heit:50px);
+            @include Text($ground:$line_color,$t_decoration:none,$colors:$white_color,$radius:0px 24px 24px 0px,$f_size:20px);
+            @include Flex($j_content:center,$a_items:center);
+            &:hover{ background: linear-gradient(124deg, #f95420, #f70361, #f95a85);}
+        }
+    }
+   }
+}

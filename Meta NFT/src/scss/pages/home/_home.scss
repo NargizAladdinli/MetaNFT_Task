@@ -107,7 +107,7 @@
         }
     }
 #anime{
-    padding: 50px 0px;
+    padding: 100px 0px;
     .container{
         max-width: 1140px;
         .text{
@@ -217,7 +217,7 @@
     }
 }
 #artist{
-    padding: 50px 0px;
+    padding: 100px 0px;
     .container{
         max-width: 1140px;
         .text{
@@ -274,15 +274,65 @@
     }
 }
 #accord{
-    padding: 50px 0px;
+    padding: 100px 0px;
     .container{
         max-width: 1140px;
         h3{
             font-family: 'Montserrat', sans-serif;
             @include Text($colors:$white_color,$f_size:28px,$f_weight:$font_700_w,$l_spacing:.6px);
         }
-        .accordion{
-            @include Flex($f_direction:column,$gap:30px);
+        .accordion{ @include Flex($f_direction:column,$gap:30px); }
+    }
+}
+#blur{
+    padding: 100px 0px;
+    .container{
+        max-width: 1140px;
+        .text{
+            @include Flex($j_content:space-between,$a_items:center);
+            h3{
+                font-family: 'Michroma', sans-serif;
+                @include Text($colors:$white_color,$f_size:28px,$f_weight:$font_700_w,$l_spacing:.6px);
+            }
+            a{
+                @include Flex($a_items:center,$gap:10px);
+                @include Text($f_size:15px,$f_weight:600,$colors:$white_color,$t_decoration:none);
+                transition: .3s ease-in-out;
+                &:hover{ color: $pink_color; }
+                i{
+                    @include Img($wid:20px,$heit:20px,$flow:hidden);
+                    @include Text($ground:$pink_color,$colors:$white_color,$radius:10px);
+                    @include Flex($j_content:center,$a_items:center);
+                }
+            }
+        }
+        .img{
+            @include Img($wid:100%,$pos:relative,$flow:hidden);
+            border-radius: 24px;
+            img{ @include Img($wid:100%,$heit:420px,$o_fit:cover); }
+            .txt{
+                @include Img($pos:absolute,$botom:0px,$left:0px);
+                backdrop-filter: blur(24px);
+                padding: 15px 15px;
+                h5{ @include Text($colors:#f1eded,$f_size:15px,$f_weight:$font_700_w); }
+                .div{
+                    font-family: 'Michroma', sans-serif;
+                    @include Text($t_decoration:none,$colors:$white_color,$f_size:30px,$f_weight:$font_700_w);
+                    transition: .3s ease-in-out;
+                    &:hover{ color: $pink_color; }
+                }
+                img{
+                    @include Img($wid:50px,$heit:50px);
+                    border-radius: 50px;
+                }
+                .icon{
+                    @include Flex($gap:10px);
+                    .pik{
+                        font-family: 'Michroma', sans-serif;
+                        @include Text($colors:$white_color,$f_size:15p,$t_decoration:none);
+                    }
+                }
+            }
         }
     }
 }

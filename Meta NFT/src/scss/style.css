@@ -13,6 +13,85 @@ body {
   background: #050828;
 }
 
+#end {
+  background: #040722;
+  margin-top: 120px;
+  border-top: 1px solid #0b0e28;
+  width: 100%;
+  background-size: cover;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border-bottom: 1px solid #0b0e28;
+  height: 100%;
+}
+#end .container {
+  max-width: 1140px;
+}
+#end .container .logo {
+  width: 100%;
+}
+#end .container .logo a img {
+  width: 200px;
+}
+#end .container p {
+  color: #fff;
+  padding: 50px 0px;
+}
+#end .container h3 {
+  font-family: "Michroma", sans-serif;
+  color: #fff;
+  padding: 0px 30px;
+}
+#end .container ul li {
+  padding: 10px 0px;
+}
+#end .container ul li a {
+  font-family: "Michroma", sans-serif;
+  color: #ebe9e9;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0px 0px;
+  transition: 0.3s ease-in-out;
+}
+#end .container ul li a:hover {
+  padding: 0px 5px;
+  color: #f70361;
+}
+#end .container .inpt {
+  position: relative;
+  overflow: hidden;
+}
+#end .container .inpt input {
+  width: 100%;
+  height: 50px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  background: none;
+  border-radius: 24px;
+  border: 1px solid #1f2130;
+  padding: 5px 10px;
+}
+#end .container .inpt a {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  background: linear-gradient(124deg, #f95a85, #f70361, #f95420);
+  border-radius: 0px 24px 24px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#end .container .inpt a:hover {
+  background: linear-gradient(124deg, #f95420, #f70361, #f95a85);
+}
+
 #all {
   background-color: transparent;
   width: 100%;
@@ -285,7 +364,7 @@ body {
 }
 
 #anime {
-  padding: 50px 0px;
+  padding: 100px 0px;
 }
 #anime .container {
   max-width: 1140px;
@@ -472,7 +551,7 @@ body {
 }
 
 #artist {
-  padding: 50px 0px;
+  padding: 100px 0px;
 }
 #artist .container {
   max-width: 1140px;
@@ -562,7 +641,7 @@ body {
 }
 
 #accord {
-  padding: 50px 0px;
+  padding: 100px 0px;
 }
 #accord .container {
   max-width: 1140px;
@@ -578,4 +657,200 @@ body {
   display: flex;
   gap: 30px;
   flex-direction: column;
+}
+
+#blur {
+  padding: 100px 0px;
+}
+#blur .container {
+  max-width: 1140px;
+}
+#blur .container .text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#blur .container .text h3 {
+  font-family: "Michroma", sans-serif;
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+}
+#blur .container .text a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+#blur .container .text a:hover {
+  color: #f70361;
+}
+#blur .container .text a i {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: #fff;
+  background: #f70361;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#blur .container .img {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 24px;
+}
+#blur .container .img img {
+  width: 100%;
+  height: 420px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#blur .container .img .txt {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  -webkit-backdrop-filter: blur(24px);
+          backdrop-filter: blur(24px);
+  padding: 15px 15px;
+}
+#blur .container .img .txt h5 {
+  color: #f1eded;
+  font-size: 15px;
+  font-weight: 700;
+}
+#blur .container .img .txt .div {
+  font-family: "Michroma", sans-serif;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+#blur .container .img .txt .div:hover {
+  color: #f70361;
+}
+#blur .container .img .txt img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+#blur .container .img .txt .icon {
+  display: flex;
+  gap: 10px;
+}
+#blur .container .img .txt .icon .pik {
+  font-family: "Michroma", sans-serif;
+  color: #fff;
+  font-size: 15p;
+  text-decoration: none;
+}
+
+#art {
+  padding: 150px 0px;
+  background-size: cover;
+  min-height: 850px;
+}
+@media (max-width: 768px) {
+  #art {
+    width: 100%;
+  }
+}
+#art .container {
+  max-width: 1140px;
+}
+#art .container h1 {
+  position: relative;
+  font-family: "Michroma", sans-serif;
+  color: #fff;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+#art .container h1::before {
+  content: "";
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  z-index: -1;
+  top: -63px;
+  left: -35px;
+  background: linear-gradient(180deg, #109b9b -43.08%, #052a2a -7.55%, #2b7a7a 33.87%, #27c793 82.91%);
+  border-radius: 100%;
+  filter: blur(40px);
+  display: inline-block;
+  opacity: 0.5;
+}
+#art .container h1 span {
+  color: #f70361;
+}
+#art .container p {
+  color: #f1eded;
+  line-height: 1.6;
+  letter-spacing: 0.3px;
+  padding: 30px 0px;
+}
+#art .container .but .pink {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  background: linear-gradient(124deg, #f95a85, #f70361, #f95420);
+  border-radius: 24px;
+  width: 190px;
+  height: 55px;
+  transition: 0.3s ease-in-out;
+}
+#art .container .but .pink:hover {
+  background: linear-gradient(124deg, #f95420, #f70361, #f95a85);
+}
+#art .container .but .pink i {
+  padding: 0px 10px;
+}
+#art .container .but .none {
+  padding: 0px 50px;
+  color: gray;
+  font-size: 15px;
+  font-weight: 700;
+  background: none;
+  border: none;
+  transition: 0.3s ease-in-out;
+}
+#art .container .but .none:hover {
+  color: #fff;
+}
+#art .container .but .none i {
+  padding: 0px 10px;
+}
+#art .container .row {
+  padding: 50px 0px;
+}
+#art .container .row .number {
+  color: #f70361;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 10px;
+  display: block;
+}
+#art .container .row .rit {
+  color: #babcc1;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+#art .container .row .img {
+  width: 100%;
+}
+#art .container .row .img img {
+  width: 100%;
+  height: 575px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }/*# sourceMappingURL=style.css.map */
