@@ -62,3 +62,33 @@
         }
     }
 }
+#bird{
+    padding: 50px 0px;
+    .container{
+        max-width: 1140px;
+        .txt{
+            font-family: 'Montserrat', sans-serif;
+            h4{ @include Text($colors:$pink_color,$f_size:20px,$f_weight:$font_700_w,$l_spacing:.6px); }
+            h3{
+                margin-bottom: 20px;
+                @include Text($colors:$white_color,$f_size:42px,$l_height:1.2,$f_weight:$font_700_w,$l_spacing:.6px);
+            }
+            p{
+                margin-bottom: 30px;
+                @include Text($colors:#d1cccc,$f_size:17px,$f_weight:400,$l_height:1.8,);
+            }
+            button{
+                @include Text($ground:$line_color,$colors:$white_color,$f_size:16px,$f_weight:$font_700_w,$l_spacing:.3px,$t_align:center,$radius:30px);
+                min-width: 204px;
+                display: inline-block;
+                padding: 14px 40px;
+                transition: all 0.3s ease;
+                &:hover{ background: linear-gradient(124deg, #f95420, #f70361, #f95a85); }
+            }
+        }
+        .img{
+            width: $wid_100;
+            img{ @include Img($wid:$wid_100,$heit:497,$o_fit:cover,$o_pos:center); }
+        }
+    }
+}
