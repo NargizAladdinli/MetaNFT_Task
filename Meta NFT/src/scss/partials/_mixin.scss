@@ -1,4 +1,4 @@
-@mixin Img($wid:null,$heit:null,$pos:null,$z:null,$flow:null,$o_fit:null,$o_pos:null,$right:null,$top:null,$left:null,$botom:null){
+@mixin Img($wid:null,$heit:null,$pos:null,$z:null,$flow:null,$o_fit:null,$o_pos:null,$right:null,$top:null,$left:null,$botom:null,$opacity:null){
     width: $wid;
     height: $heit;
     position: $pos;
@@ -10,6 +10,7 @@
     top: $top;
     bottom: $botom;
     left: $left;
+    opacity: $opacity;
 }
 @mixin Flex($j_content:null,$a_items:null,$gap:null,$f_direction:null){
     display: flex;
