@@ -24,6 +24,7 @@
         .a_navbar {
             @media (max-width:768px) { display: none; }
             @include Img($wid: 160px, $heit: 50px);
+            @include Flex($j_content:center,$a_items:center);
             @include Text($ground: $line_color, $colors: $white_color, $f_weight: $font_700_w, $radius: 30px, $t_decoration: none, $border: 1px);
             font-family: "Chakra Petch", sans-serif;
             transition: all 0.3s ease;
