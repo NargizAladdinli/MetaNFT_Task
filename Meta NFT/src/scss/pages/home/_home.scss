@@ -64,10 +64,6 @@
             }
         }
         .boxing{
-            @media (max-width:768px) {
-                width: 330px;
-                margin: auto;
-            }
             @include Text($ground:$rgba_255_003,$colors:$white_color,$border:2px solid $rgba_255_01,$radius:24px);
             padding: 20px;
             overflow: hidden;
@@ -301,6 +297,7 @@
                 border: none;
                 background: transparent;
                 .accordion-button{
+                    --bs-accordion-btn-focus-box-shadow: aliceblue;
                     &::after{
                         content: '\f107';
                         @include Img($pos:absolute,$top:8px,$right:9px,$wid:43px,$heit:43px);

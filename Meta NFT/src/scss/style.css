@@ -321,12 +321,6 @@ body {
   width: 100%;
   height: 422px;
 }
-@media (max-width: 768px) {
-  #picture .container .boxing {
-    width: 330px;
-    margin: auto;
-  }
-}
 #picture .container .boxing .peple {
   display: flex;
   justify-content: space-between;
@@ -691,6 +685,7 @@ body {
   background: transparent;
 }
 #accord .container .accordion .accordion-item .accordion-button {
+  --bs-accordion-btn-focus-box-shadow: aliceblue;
   font-family: "Michroma", sans-serif;
   color: #fff;
   font-size: 17px;
