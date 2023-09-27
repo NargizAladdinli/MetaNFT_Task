@@ -9,7 +9,7 @@
         @include Flex($j_content: space-between, $a_items: center);
         a { img { @include Img($wid: 195px, $heit: 55px); } }
         .menu {
-            @media (max-width:768px) { display: none; }
+            @media (max-width:1024px) { display: none; }
             ul {
                 @include Flex($gap:20px,$a_items:center);
                 li {

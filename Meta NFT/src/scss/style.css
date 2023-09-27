@@ -115,7 +115,7 @@ body {
   width: 195px;
   height: 55px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .container .all_line .menu {
     display: none;
   }
