@@ -11,7 +11,7 @@ const collection = [
         img4:"https://metanft.hasnaanajmi.org/images/collections/4.jpg"
     },
     {
-        name:"Abstract painting",
+        name:"Modern Art",
         profil:"https://metanft.hasnaanajmi.org/images/avatars/1.jpg",
         like:142,
         img1:"https://metanft.hasnaanajmi.org/images/collections/1.jpg",
