@@ -1,4 +1,5 @@
 const category = document.querySelector('#category');
+const categorys = document.querySelector('#categorys');
 
 const products = [
     {

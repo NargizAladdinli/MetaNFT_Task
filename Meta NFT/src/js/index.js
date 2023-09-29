@@ -30,9 +30,9 @@ const collection = [
     },
 ]
 
-let text = "";
+let txt = "";
 collection.forEach((item) => {
-    text += `
+    txt += `
     <div class="col-md-6 col-lg-4">
               <div class="boxing">
                 <div class="container">
@@ -77,4 +77,4 @@ collection.forEach((item) => {
     `
 })
 
-retur.innerHTML = text;
+retur.innerHTML = txt;
